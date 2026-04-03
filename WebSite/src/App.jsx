@@ -1,12 +1,23 @@
-import { HomePage } from './pages/HomePage'
-import './App.css'
+import { HomePage } from "./pages/HomePage";
+import "./App.css";
+import { Routes,Route } from "react-router";
+import { CheckoutPage } from "./pages/CheckoutPage";
+import { OrdersPage } from "./pages/OrdersPAge";
+
 
 
 function App() {
-
   return (
-    <HomePage/>
-  )
+    <Routes>
+      <Route index element={<HomePage/>}/>
+      <Route path="checkout" element={<CheckoutPage/>}/>
+      <Route path="orders" element={<OrdersPage/>} />
+    </Routes>
+
+
+  );
 }
 
-export default App
+export default App;
+
+
