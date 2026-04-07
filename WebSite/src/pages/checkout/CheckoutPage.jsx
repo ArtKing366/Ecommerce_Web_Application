@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { OrderSummary } from "./OrderSummary";
 import { PaymentSummary } from "./PaymentSummary";
 
-export function CheckoutPage({ cart, loadCart}) {
+export function CheckoutPage({ cart, loadCart }) {
   const [deliveryOptions, setDeliveryOptions] = useState([]);
   const [paymentSummary, setPaymentSummary] = useState();
 
@@ -17,7 +17,7 @@ export function CheckoutPage({ cart, loadCart}) {
 
       setDeliveryOptions(response.data);
 
-      response =  await axios.get("/api/payment-summary");
+      response = await axios.get("/api/payment-summary");
       setPaymentSummary(response.data);
     };
 
@@ -32,8 +32,7 @@ export function CheckoutPage({ cart, loadCart}) {
         <div className="header-content">
           <div className="checkout-header-left-section">
             <a href="/">
-              <img className="logo" src="images/logo.png" />
-              <img className="mobile-logo" src="images/mobile-logo.png" />
+                <span className="logo-text logo-brand">Ducunt</span>
             </a>
           </div>
 
@@ -55,9 +54,13 @@ export function CheckoutPage({ cart, loadCart}) {
         <div className="page-title">Review your order</div>
 
         <div className="checkout-grid">
-          <OrderSummary cart={cart} deliveryOptions={deliveryOptions} loadCart={loadCart}  />
+          <OrderSummary
+            cart={cart}
+            deliveryOptions={deliveryOptions}
+            loadCart={loadCart}
+          />
 
-          <PaymentSummary paymentSummary={paymentSummary}  loadCart={loadCart}  />
+          <PaymentSummary paymentSummary={paymentSummary} loadCart={loadCart} />
         </div>
       </div>
     </>

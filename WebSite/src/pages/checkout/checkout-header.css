@@ -107,3 +107,11 @@
     width: auto;
   }
 }
+
+.checkout-header-left-section a {
+  text-decoration: none;
+}
+
+.checkout-header-left-section a:hover {
+  text-decoration: none;
+}

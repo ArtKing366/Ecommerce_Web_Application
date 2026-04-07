@@ -150,16 +150,16 @@
 }
 
 .header .header-link .logo-text {
-  color: white !important; /* Делаем текст чисто белым */
-  font-size: 26px;         /* Увеличиваем размер */
-  font-weight: 800;       /* Делаем очень жирным */
-  text-transform: uppercase; /* Все заглавные (по желанию) */
-  letter-spacing: 1px;    /* Немного раздвинем буквы */
-  text-decoration: none;  /* Убираем подчеркивание */
+  color: white !important; 
+  font-size: 26px;      
+  font-weight: 800;      
+  text-transform: uppercase; 
+  letter-spacing: 1px;   
+  text-decoration: none; 
   display: inline-block;
   vertical-align: middle;
 }
 
 .header .header-link:hover .logo-text {
-  color: #1e5fc0 !important; /* Голубой акцент при наведении */
+  color: #1e5fc0 !important; 
 }
