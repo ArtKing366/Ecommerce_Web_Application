@@ -2,6 +2,20 @@
 
 A full-stack e-commerce web application built with React for the frontend and Node.js/Express for the backend. This project demonstrates a complete online shopping experience including product browsing, cart management, checkout, and order tracking.
 
+## Screenshots
+
+### 1. Home Page
+![Home Page](screenshots/home-page.png)
+The main product catalog page where users can browse available products, view ratings and prices, and add items to their cart.
+
+### 2. Orders Page
+![Orders Page](screenshots/orders-page.png)
+The orders page displays the user's order history with details including order date, total cost, and individual products.
+
+### 3. Cart/Checkout Page
+![Cart Page](screenshots/cart-page.png)
+The checkout page shows cart items with delivery options, payment summary, and the ability to place orders.
+
 ## Features
 
 - **Product Catalog**: Browse products with images, ratings, and prices
@@ -103,19 +117,7 @@ website-backend/        # Backend Node.js application
 - `POST /api/orders` - Create new order
 - `GET /api/orders` - Get user orders
 
-## Screenshots
 
-### 1. Home Page
-![Home Page](screenshots/home-page.png)
-The main product catalog page where users can browse available products, view ratings and prices, and add items to their cart.
-
-### 2. Orders Page
-![Orders Page](screenshots/orders-page.png)
-The orders page displays the user's order history with details including order date, total cost, and individual products.
-
-### 3. Cart/Checkout Page
-![Cart Page](screenshots/cart-page.png)
-The checkout page shows cart items with delivery options, payment summary, and the ability to place orders.
 
 ## Testing
 
